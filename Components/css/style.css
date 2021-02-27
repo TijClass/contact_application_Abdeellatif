@@ -1,0 +1,102 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*welcome_back*/
+.welcome_back{
+    background-color: #CAD2C5;
+    height: 100vh;
+    display: flex;
+}
+.title{
+    margin: 0 auto;
+    font-size: xxx-large;
+    color: white;
+}
+
+
+.image{
+    background-image: url('../../images/pc.jpg');
+    background-size: cover;
+    width: 50%;
+}
+
+
+.login{
+    margin-left: 25%;
+    margin-top: 20%;
+    height: 70%;
+    width: 138%;
+    border: solid white;
+    background-color: white; 
+}
+.butt-login{
+    width: 81px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #84A98C;
+    color: white;
+}
+.butt-read{
+    width: 36%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #84A98C;
+    color: white;
+}
+.fname {
+    width: 70%;
+    padding: 2%;
+}
+
+
+
+/*Read More*/
+.Read-More{
+  
+    background-color: #2F3E46;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: xxx-large;
+    color: white;
+}
+
+i.fa.fa-close {
+    color: white;
+    font-size: xx-large;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+.para {
+    width: 90%;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+}
+
+
+
+/*Add person*/
+.add-person{
+    background-image: url('../../images/per.png');
+    background-size: cover;
+    height: 100vh;
+    background-color: #616161;
+    background-blend-mode: multiply;  
+
+}
