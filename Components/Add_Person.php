@@ -4,51 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     <link rel="stylesheet" href="css/style.css">
+   
     <title>Contact_App</title>
 </head>
-<body>
+<body >
 <div class="add-person">
          <div class="nav-add">
          <h2>Add Person</h2>
-         <small class=icon></small>
+         <div class="close">
+         <i class="fa fa-close"></i>
+             </div>
          </div>
 
-         <div class="formgroup">
+     <div class="formgroup">
          <form action="">
 
          <div>
-        <label for="lname">Firstname:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <label for="lname" class="label">Firstname:</label><br>
+        <input type="text" class="input" name="lname"  placeholder="Enter your firstname"><br><br>
         </div>
          <div>
-        <label for="lname">Lastname:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <label for="lname" class="label">Lastname:</label><br>
+        <input type="text" class="input" name="lname"  placeholder="enter your lastname"><br><br>
         </div>
          <div>
-        <label for="lname">Email:</label><br>
-        <input type="email" id="lname" name="lname" value="Doe"><br><br>
+        <label for="lname" class="label">Email:</label><br>
+        <input type="email" class="input" name="lname" placeholder="enter your email"><br><br>
         </div>
          <div>
-        <label for="lname">Adress:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <label for="lname" class="label">Adress:</label><br>
+        <input type="text" class="input" name="lname"  placeholder="Enter your adress"><br><br>
         </div>
          <div>
-        <label for="lname">Phone:</label><br>
-        <input type="number" id="lname" name="lname" value="Doe"><br><br>
+        <label for="lname" class="label">Phone:</label><br>
+        <input type="number" class="input" name="lname" value=""  placeholder="Enter your number phone"><br><br>
         </div>
 
-        <div class="choose"></div>
+        <div class="choose">
+       
+           <input type="radio" id="male" name="gender" value="male">
+           <label for="male" class="male">Family</label><br>
+           <input type="radio" id="female" name="gender" value="female">
+            <label for="female" class="male">Friend</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other" class="male">Buissenns</label>
+        </div>
 
         <div>
-        <label for="lname">notes:</label><br>
-        <input type="number" id="lname" name="lname" value="Doe"><br><br>
+        <label for="lname" class="label">notes:</label><br>
+        <input type="text" id="notes" name="lname"  placeholder="text area"><br><br>
         </div>
 
-        <button type="submit">Submit</button>
+         <div>
+        <button type="submit" class="butt-submit"><a href="http://localhost/contact_application_Abdeellatif/index_.php">Submit</a></button>
+        </div>
 
          </form>
-         </div>
+      </div>
 
      </div>
 </body>

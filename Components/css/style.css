@@ -11,10 +11,14 @@
     height: 100vh;
     display: flex;
 }
+.welcome {
+    width: 50%;
+}
 .title{
     margin: 0 auto;
     font-size: xxx-large;
     color: white;
+    text-align: center;
 }
 
 
@@ -23,15 +27,22 @@
     background-size: cover;
     width: 50%;
 }
-
-
-.login{
-    margin-left: 25%;
-    margin-top: 20%;
-    height: 70%;
-    width: 138%;
+.login {
+    margin-left: 15%;
+    margin-top: 10%;
+    height: 60%;
+    width: 72%;
     border: solid white;
-    background-color: white; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+}
+.ti-login{
+    margin-left: 10%;
+    margin-top: 1%;
+    color: black;
+    font-size: 30px;
 }
 .butt-login{
     width: 81px;
@@ -40,6 +51,10 @@
     background-color: #84A98C;
     color: white;
 }
+.butt-login:hover{
+    background-color:white;
+    color:white;
+}
 .butt-read{
     width: 36%;
     height: 30px;
@@ -47,9 +62,16 @@
     background-color: #84A98C;
     color: white;
 }
+.butt-read:hover{
+    background-color:white;
+    color:white;
+}
 .fname {
     width: 70%;
     padding: 2%;
+}
+.align {
+    text-align: center;
 }
 
 
@@ -71,13 +93,7 @@ h1 {
     color: white;
 }
 
-i.fa.fa-close {
-    color: white;
-    font-size: xx-large;
-    position: absolute;
-    top: 1%;
-    right: 1%;
-}
+
 
 .para {
     width: 90%;
@@ -85,7 +101,7 @@ i.fa.fa-close {
 }
 
 p{
-    font-size: 20px;
+    font-size: 25px;
     color: white;
 }
 
@@ -96,7 +112,166 @@ p{
     background-image: url('../../images/per.png');
     background-size: cover;
     height: 100vh;
+    width: 100%;
     background-color: #616161;
     background-blend-mode: multiply;  
 
 }
+
+.nav-add {
+    border: solid #CAD2C5;
+    background-color: #CAD2C5;
+    height: 11%;
+    position: relative;
+}
+h2 {
+    margin-left: 10%;
+    margin-top: 1%;
+    color: white;
+    font-size: 30px;
+}
+.close{
+    position: absolute;
+    right: 4%;
+    top: 31%;
+}
+i.fa.fa-close {
+    color: white;
+    font-size: 30px;
+}
+.formgroup {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.label{
+    color: white;
+}
+.input{
+    width: 95%;
+    padding: 1%;
+}
+#notes{
+    width: 95%;
+    padding: 2%;
+}
+.butt-submit{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #84A98C;
+    color: white;
+    float: right;
+    margin-right: 5%;
+}
+.butt-submit:hover{
+    background-color:white;
+    color:black;
+}
+.choose {
+    display: flex;
+    justify-content: space-between;
+}
+.male{
+    color: white;
+}
+
+
+
+/*index_*/
+.My-web-app{
+  
+    height: 100vh;
+    background-color: #CAD2C5;
+}
+.logout {
+    border: solid white;
+    background-color: white;
+    position: relative;
+    width: 90%;
+    height: 15%;
+    margin: 0 auto;
+}
+.butt-logout{
+    width: 16%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #84A98C;
+    color: white;
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    text-decoration: none;
+}
+.butt-logout:hover{
+    background-color:white;
+    color:white;
+}
+.title-webapp{
+    margin-left: 10%;
+    margin-top: 2%;
+    color: black;
+    font-size: 42px;
+}
+.contact_list {
+   
+    height: 20%;
+    margin-top: 2%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+h4 {
+    text-align: left;
+    font-size: 38px;
+    padding-left: 5%;
+}
+.butt-add-person{
+    width: 165px;
+    height: 37px;
+    background-color: white;
+    color: black;
+}
+.input-search{
+    width: 40vh;
+    height: 5vh
+}
+.search{
+    position: absolute;
+    right: 17%;
+}
+.add_person{
+    position: absolute;
+    right: 5%;
+}
+.tab {
+    
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 22px;
+    margin-top: 2%;
+    line-height: 7vh;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color: white;
+  }
+  
+ 
+  th{
+      background-color: #354F52;
+  }
+  td {
+    background-color:#354f52b0;
+    }
