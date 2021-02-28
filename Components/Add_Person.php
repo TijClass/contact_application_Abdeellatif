@@ -44,13 +44,13 @@
         </div>
 
         <div class="choose">
-       
+           <label for="male" class="male">Family</label>
            <input type="radio" id="male" name="gender" value="male">
-           <label for="male" class="male">Family</label><br>
-           <input type="radio" id="female" name="gender" value="female">
-            <label for="female" class="male">Friend</label><br>
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other" class="male">Buissenns</label>
+           <label for="female" class="male">Friend</label>
+           <input type="radio" id="male" name="gender" value="female">
+           <label for="other" class="male">Buissenns</label>
+            <input type="radio" id="male" name="gender" value="other">
+            
         </div>
 
         <div>

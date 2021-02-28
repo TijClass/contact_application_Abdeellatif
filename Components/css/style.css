@@ -4,6 +4,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+   color: white; 
+}
 
 /*welcome_back*/
 .welcome_back{
@@ -51,10 +55,7 @@
     background-color: #84A98C;
     color: white;
 }
-.butt-login:hover{
-    background-color:white;
-    color:white;
-}
+
 .butt-read{
     width: 36%;
     height: 30px;
@@ -62,10 +63,7 @@
     background-color: #84A98C;
     color: white;
 }
-.butt-read:hover{
-    background-color:white;
-    color:white;
-}
+
 .fname {
     width: 70%;
     padding: 2%;
@@ -101,8 +99,15 @@ h1 {
 }
 
 p{
-    font-size: 25px;
+    font-size: 22px;
     color: white;
+}
+.exit {
+    color: white;
+    text-decoration: revert;
+    font-size: 20px;
+    float: right;
+    margin-right: 10vh;
 }
 
 
@@ -167,16 +172,16 @@ i.fa.fa-close {
     float: right;
     margin-right: 5%;
 }
-.butt-submit:hover{
-    background-color:white;
-    color:black;
-}
+
 .choose {
     display: flex;
     justify-content: space-between;
 }
 .male{
     color: white;
+}
+#male{
+    margin-right: 20vh;
 }
 
 
@@ -206,10 +211,7 @@ i.fa.fa-close {
     top: 25%;
     text-decoration: none;
 }
-.butt-logout:hover{
-    background-color:white;
-    color:white;
-}
+
 .title-webapp{
     margin-left: 10%;
     margin-top: 2%;
@@ -233,6 +235,9 @@ h4 {
     width: 165px;
     height: 37px;
     background-color: white;
+    color: black;
+}
+.a-add-person{
     color: black;
 }
 .input-search{

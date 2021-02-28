@@ -26,7 +26,7 @@
         </div>
 
         <div class="add_person">
-        <button class="butt-add-person" type="submit"><a href="http://localhost/contact_application_Abdeellatif/Components/Add_Person.php" >Add Person</a></button>
+        <button class="butt-add-person" type="submit"><a class="a-add-person" href="http://localhost/contact_application_Abdeellatif/Components/Add_Person.php" >Add Person</a></button>
         </div>
 
     </div>

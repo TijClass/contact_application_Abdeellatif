@@ -26,6 +26,9 @@
      <div class="para">
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deserunt vel veritatis dicta laudantium at recusandae praesentium eum alias, aperiam nemo harum itaque magni iusto voluptate iste aliquid necessitatibus deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deserunt vel veritatis dicta laudantium at recusandae praesentium eum alias, aperiam nemo harum itaque magni iusto voluptate iste aliquid necessitatibus </p>
      </div>
+     <div class="Exit">
+         <a class="exit" href="http://localhost/contact_application_Abdeellatif/Components/welcome_back.php">Exit</a>
+     </div>
 
  </div>
     
