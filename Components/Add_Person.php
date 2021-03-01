@@ -59,7 +59,7 @@
         </div>
 
          <div>
-        <button type="submit" class="butt-submit"><a href="http://localhost/contact_application_Abdeellatif/index_.php">Submit</a></button>
+        <button type="submit" class="butt-submit"><a href="http://localhost/contact_application_Abdeellatif/index.php">Submit</a></button>
         </div>
 
          </form>

@@ -16,7 +16,7 @@
        <div class="login">
          <div> <h2 class="ti-login">Login</h2></div>
          <div>
-         <form action="">
+         <form action="../index.php" method="POST">
 
          <div>  
          <label for="fname">Email:</label><br>
@@ -29,7 +29,7 @@
          </div>
            
          <div class="align">
-         <button class="butt-login" type="submit"><a href="http://localhost/contact_application_Abdeellatif/index6.php">Login</a></button>
+         <button class="butt-login" type="submit" name="login"><a href="http://localhost/contact_application_Abdeellatif/index.php">Login</a></button>
 
          <button class="butt-read" type="submit"><a href="http://localhost/contact_application_Abdeellatif/Components/Read_More.php">Read More</a></button>
          </div>

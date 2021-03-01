@@ -1,3 +1,15 @@
+<?php
+
+$conn = new PDO("mysql:host=localhost;dbname=login;port=3306;charset=utf8",'root','');
+
+
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
