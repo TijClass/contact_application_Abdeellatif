@@ -1,15 +1,18 @@
 <?php
-$msg = '';
+function OpenCon()
+{
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "application";
+$conn = new mysqli ($dbhost, $dbuser, $dbpass,$dbname) or die("Connect failed: %s\n". $conn -> error);
 
-try {
-    $conn = new PDO("mysql:host=localhost;dbname=application;port=3306;charset=utf8",'root','');
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $msg = "Connected successfully";
-  } catch(PDOException $e) {
-    $msg = "Connection failed: " . $e->getMessage();
-    header("location:sql-not-found.php");
-  }
+return $conn;
+}
 
+function CloseCon($conn)
+{
+$conn -> close();
+}
 
 ?>
