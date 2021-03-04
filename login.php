@@ -1,11 +1,11 @@
-<?php include 'connexion.php'; 
+<?php include 'Components/connexion.php'; 
 
 DEFINE("BASE_URI","http://".$_SERVER['SERVER_NAME'].'/contact_application_Abdeellatif/');
 DEFINE("SITE_TITLE","Contact_app_abdellatif");
 
 $conn = OpenCon ();  
 // echo "Connecté avec succès" ; 
-
+ session_start();
 if (isset($_POST['login'])) {
   $email=$_POST['email'];
   $pass=$_POST['password'];
@@ -14,9 +14,12 @@ if (isset($_POST['login'])) {
   if (!$row = mysqli_fetch_assoc($result)) {
     echo "Your username or password is incorrect!";
   } else {
-    header("location: ".BASE_URI."index.php");
+    $_SESSION["email"] = $_POST["email"];
+    $_SESSION["password"] = $_SESSION["password"];
+    header("location: Components/admin.php");
   }
 }
+
 
 
 // $query = "SELECT * FROM tables";
@@ -30,7 +33,7 @@ if (isset($_POST['login'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Components/css/style.css">
     <title><?= SITE_TITLE; ?></title>
 </head>
 <body>
@@ -42,15 +45,9 @@ if (isset($_POST['login'])) {
        <div class="login">
 
 
-       <?php
-       if(isset($message))
-       echo "<label class='text-danger'> $message </label>";
-       ?>
-
-
          <div> <h2 class="ti-login">Login</h2></div>
          <div>
-         <form action="welcome_back.php" method="POST">
+         <form action="login.php" method="POST">
 
          <div>  
          <label for="fname">Email:</label><br>

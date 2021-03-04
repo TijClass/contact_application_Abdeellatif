@@ -1,4 +1,14 @@
 
+<?php
+ include('inderdit.php');
+ echo "welcome youssef"
+
+
+
+
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,14 +17,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="Components/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Contact_App</title>
 </head>
 <body>
 <div class="My-web-app">
     <div class="logout">
         <h2 class="title-webapp">My WebApp</h2>
-         <button class="butt-logout" type="submit"> <a href="http://localhost/contact_application_Abdeellatif/Components/welcome_back.php">logout</a></button>
+         <button class="butt-logout" type="submit"> <a href="http://localhost/contact_application_Abdeellatif/login.php">logout</a></button>
     </div>
 
     <div class="contact_list">
