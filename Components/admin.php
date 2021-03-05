@@ -1,12 +1,7 @@
 
 <?php
- include('inderdit.php');
- echo "welcome youssef"
-
-
-
-
-
+ include './inderdit.php';
+//   echo "welcome youssef";
 ?>
 
 
@@ -24,7 +19,7 @@
 <div class="My-web-app">
     <div class="logout">
         <h2 class="title-webapp">My WebApp</h2>
-         <button class="butt-logout" type="submit"> <a href="http://localhost/contact_application_Abdeellatif/login.php">logout</a></button>
+         <button class="butt-logout" type="submit"> <a href="logout.php">logout</a></button>
     </div>
 
     <div class="contact_list">

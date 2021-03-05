@@ -1,4 +1,4 @@
-<?php include 'Components/connexion.php'; 
+<?php include './Components/connexion.php'; 
 
 DEFINE("BASE_URI","http://".$_SERVER['SERVER_NAME'].'/contact_application_Abdeellatif/');
 DEFINE("SITE_TITLE","Contact_app_abdellatif");
@@ -12,11 +12,11 @@ if (isset($_POST['login'])) {
   $sql = "SELECT * FROM users WHERE email='$email' AND password ='$pass'";
   $result = mysqli_query($conn, $sql);
   if (!$row = mysqli_fetch_assoc($result)) {
-    echo "Your username or password is incorrect!";
+    header("location: ./login.php?err=Worng password or email !");
   } else {
     $_SESSION["email"] = $_POST["email"];
-    $_SESSION["password"] = $_SESSION["password"];
-    header("location: Components/admin.php");
+    $_SESSION["password"] = $_POST["password"];
+    header("location:./Components/admin.php");
   }
 }
 
@@ -64,6 +64,9 @@ if (isset($_POST['login'])) {
 
          <button class="butt-read" type="submit"><a href="http://localhost/contact_application_Abdeellatif/Components/Read_More.php">Read More</a></button>
          </div>
+         <?php if(isset($_GET['err'])){
+           echo '<div class="alert">'.$_GET['err'].'</div>';
+         }?>
          </form>
          </div>
          </div>
